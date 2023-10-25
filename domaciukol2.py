@@ -5,8 +5,10 @@ sklad = {
   "2N7002": 97,
   "BC547C": 10
 }
+
 kodsoucastky = input("Zadejte kód součástky: ")
 mnozstvi = int(input("Zadejte požadované množství: "))
+
 if kodsoucastky in sklad:
     mnozstviskladem = sklad[kodsoucastky]
     if mnozstvi <= mnozstviskladem:
@@ -16,4 +18,4 @@ if kodsoucastky in sklad:
         print(f"Skladem je pouze {mnozstviskladem} ks {kodsoucastky}.")
         del sklad[kodsoucastky]
 else:
-    print(f"{kodsoucastky} není skladem.") 
+    print(f"{kodsoucastky} není skladem.")
